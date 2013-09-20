@@ -49,6 +49,4 @@ public class Main extends JFrame {
 
 	}
 
-	// restart button !!!!!
-
 }
