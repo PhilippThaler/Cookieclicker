@@ -60,6 +60,6 @@ public class BuildingHolder {
 
 	public static void reset() {
 		setBuildings(defaultValues);
-		ContentPane.setStatusbar("Restart successful!");
+		ContentPane.setStatusbar("Reset successful!");
 	}
 }

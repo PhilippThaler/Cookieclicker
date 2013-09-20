@@ -48,7 +48,7 @@ public class ContentPane extends JPanel {
 	JButton btnAc;
 
 	private static JLabel lblStatusbar;
-	private JButton btnRestart;
+	private JButton btnReset;
 
 	public ContentPane() {
 		initialize();
@@ -351,8 +351,8 @@ public class ContentPane extends JPanel {
 			}
 		});
 
-		btnRestart = new JButton("Restart");
-		btnRestart.addActionListener(new ActionListener() {
+		btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int option = JOptionPane.showConfirmDialog(null,
 						"You'll lose all your precious cookies!!!", "Reset?",
@@ -366,7 +366,7 @@ public class ContentPane extends JPanel {
 		gbc_btnRestart.insets = new Insets(0, 0, 5, 5);
 		gbc_btnRestart.gridx = 0;
 		gbc_btnRestart.gridy = 11;
-		add(btnRestart, gbc_btnRestart);
+		add(btnReset, gbc_btnRestart);
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.fill = GridBagConstraints.BOTH;
 		gbc_btnNewButton.weighty = 1.0;

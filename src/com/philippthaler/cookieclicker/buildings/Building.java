@@ -31,7 +31,7 @@ public class Building {
 		if (isBuyable()) {
 			BuildingHolder.cookies -= price;
 			amount++;
-			price = (long) (price * Math.pow(1.030, amount));
+			price *= 1.15;
 		} else
 			ContentPane.setStatusbar("You don't have enough cookies.");
 	}
